@@ -5,7 +5,6 @@ import Skills from "../components/Skills";
 import PortfolioGrid from "../components/PortfolioGrid";
 import Testimonials from "../components/Testimonials";
 import Brands from "../components/Brands";
-
 export default function Home() {
   return (
     <div>

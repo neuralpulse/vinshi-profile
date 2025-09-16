@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ sectionRef, handleScroll }) {
   const [activeLink, setActiveLink] = useState("Welcome");
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   const navItems = [
-    { name: "Welcome", href: "/" },
-    { name: "About Me", href: "/about" },
-    { name: "Skills", href: "/skills" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Contact", href: "/contact" },
+    { name: "Welcome", sectionId: "hero" },
+    { name: "About Me", sectionId: "about" },
+    { name: "Skills", sectionId: "skills" },
+    { name: "Portfolio", sectionId: "portfolio" },
+    { name: "Contact", sectionId: "contact" },
   ];
 
-  const handleLinkClick = (linkName) => {
+  const handleLinkClick = (linkName, sectionId) => {
     setActiveLink(linkName);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   useEffect(() => {
@@ -23,11 +26,10 @@ export default function Navbar() {
       const currentScrollPos = window.pageYOffset;
       const isScrollingDown = currentScrollPos > prevScrollPos;
 
-      // Hide navbar if scrolling down beyond 50px, show if scrolling up
       if (currentScrollPos > 50) {
         setIsVisible(!isScrollingDown);
       } else {
-        setIsVisible(true); // Always show if near the top
+        setIsVisible(true);
       }
 
       setPrevScrollPos(currentScrollPos);
@@ -47,18 +49,17 @@ export default function Navbar() {
         <div className="flex justify-center items-center h-16">
           <div className="flex space-x-12">
             {navItems.map((item) => (
-              <NavLink
+              <button
                 key={item.name}
-                to={item.href}
-                onClick={() => handleLinkClick(item.name)}
-                className={({ isActive }) =>
-                  isActive
+                onClick={() => handleLinkClick(item.name, item.sectionId)}
+                className={
+                  activeLink === item.name
                     ? "text-gray-800 font-medium border-b-2 border-gray-800 pb-1 cursor-pointer"
                     : "text-gray-600 hover:text-gray-800 transition-colors duration-200 cursor-pointer"
                 }
               >
                 {item.name}
-              </NavLink>
+              </button>
             ))}
           </div>
         </div>

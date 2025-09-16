@@ -16,6 +16,7 @@ export default function Hero() {
         justifyContent: "center",
         alignItems: "center",
       }}
+      id="hero"
     >
       <div className="max-w-6xl mx-auto px-4 relative z-10 h-full flex items-center">
         <div className="text-center">

@@ -3,20 +3,24 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
+import { useRef } from "react";
 
 export default function App() {
+  const sectionRef = useRef(null);
+  const handleScroll = () => {
+    sectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <main className="flex-grow">
+      <Navbar sectionRef={sectionRef} handleScroll={handleScroll} />
+      <main className="flex-grow w-full">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/"
+            element={
+              <Home sectionRef={sectionRef} handleScroll={handleScroll} />
+            }
+          />
         </Routes>
       </main>
       <Footer />

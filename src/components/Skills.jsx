@@ -26,7 +26,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="w-full bg-[#f3ede7] py-16">
+    <section className="w-full bg-[#f3ede7] py-16" id="skills">
       {/* Heading */}
       <h3 className="text-3xl md:text-4xl font-bold text-center text-[#2d1b3d] mb-12">
         SKILL SETS

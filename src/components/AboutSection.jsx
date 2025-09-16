@@ -2,8 +2,18 @@ import React from "react";
 import profileImage from "../assets/photo.jpg";
 
 export default function AboutSection() {
+  function handleScroll() {
+    const element = document.getElementById("portfolio");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
-    <section className="min-h-screen w-full bg-[#f3ede7] flex items-center">
+    <section
+      className="min-h-screen w-full bg-[#f3ede7] flex items-center"
+      id="about"
+    >
       <div className="grid md:grid-cols-2 w-screen">
         {" "}
         {/* Changed to w-screen for full width */}
@@ -27,7 +37,10 @@ export default function AboutSection() {
           </p>
 
           <div>
-            <button className="bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-800 transition">
+            <button
+              className="bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-800 transition"
+              onClick={handleScroll}
+            >
               View Our Portfolio
             </button>
           </div>

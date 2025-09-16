@@ -28,7 +28,7 @@ export default function Testimonials() {
   const prev = () => setI((i - 1 + data.length) % data.length);
 
   return (
-    <section className="my-16 bg-gray-100 py-12">
+    <section className="my-16 bg-gray-100 py-12" id="testimonials">
       <div className="max-w-6xl mx-auto px-4">
         <h3 className="text-2xl font-bold text-[#4d2a2a] mb-8 text-center uppercase">
           TESTIMONIALS

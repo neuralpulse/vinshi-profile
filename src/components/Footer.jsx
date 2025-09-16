@@ -3,9 +3,8 @@ import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 py-12">
+    <footer className="bg-gray-50 py-12" id="contact">
       <div className="max-w-4xl mx-auto px-4 text-center">
-        {/* Heading */}
         <h3 className="text-3xl md:text-4xl font-bold text-purple-900 mb-6">
           Contact Information
         </h3>
