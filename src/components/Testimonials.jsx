@@ -32,10 +32,10 @@ export default function Testimonials() {
       className="bg-[#f3ede7]  py-16 sm:py-20 md:py-24 mb-1"
       id="testimonials"
     >
+      <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4d2a2a] mb-10 sm:mb-12 text-center uppercase tracking-wide leading-tight pt-5">
+        TESTIMONIALS
+      </h3>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4d2a2a] mb-10 sm:mb-12 text-center uppercase tracking-wide">
-          TESTIMONIALS
-        </h3>
         <div className="bg-[#ffffff]  border-gray-200 rounded-xl p-6 sm:p-8 md:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
           <button
             onClick={prev}

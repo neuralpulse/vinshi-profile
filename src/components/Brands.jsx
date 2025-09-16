@@ -5,7 +5,7 @@ export default function Brands() {
   return (
     <div className=" bg-[#f3ede7] max-w-full mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-1">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#4d2a2a] uppercase tracking-wide leading-tight pt-5">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-[#4d2a2a] uppercase tracking-wide leading-tight pt-5">
           COLLABORATED BRANDS
         </h3>
         <img

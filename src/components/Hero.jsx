@@ -32,16 +32,19 @@ export default function Hero({ sectionRef }) {
       <img
         src={heroImage}
         alt="Hero Background"
-        className="w-full h-auto object-contain"
+        className="w-full h-auto object-contain brightness-110 contrast-110 opacity-85"
       />
-      <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>{" "}
-      {/* Slightly darker overlay for readability */}
-      <div className="absolute inset-0 flex items-center justify-center text-center px-4 sm:px-6 md:px-8 lg:px-12">
-        <div className="max-w-5xl mx-auto text-white">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-4 sm:mb-6 md:mb-8 text-[#f3ede7] leading-tight drop-shadow-lg">
-            Where Strategy Meets Creativity.
+      <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
+      <div
+        className="absolute top-1/5 left-0 w-full flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-8 lg:px-12 md:top-1/5 md:items-center md:justify-center"
+        style={{ transform: "translateY(-50%)" }}
+      >
+        <div className="max-w-5xl mx-auto text-[#000000]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold mb-4 sm:mb-6 md:mb-8 leading-tight drop-shadow-lg">
+            Where Strategy <span className="block">Meets</span>
+            <span className="block">Creativity.</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-[#f3ede7] leading-relaxed drop-shadow-md">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-relaxed ">
             Your creative journey starts here.
           </p>
         </div>
