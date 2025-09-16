@@ -9,13 +9,11 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <AboutSection />
-        <Skills />
-        <PortfolioGrid limit={6} />
-        <Testimonials />
-        <Brands />
-      </div>
+      <AboutSection />
+      <Skills />
+      <PortfolioGrid limit={6} />
+      <Testimonials />
+      <Brands />
     </div>
   );
 }

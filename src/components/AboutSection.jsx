@@ -11,7 +11,7 @@ export default function AboutSection() {
 
   return (
     <section
-      className="min-h-screen w-full bg-[#f3ede7] flex items-center"
+      className="min-h-screen w-full bg-[#f3ede7] flex items-center mb-1"
       id="about"
     >
       <div className="grid md:grid-cols-2 w-screen">

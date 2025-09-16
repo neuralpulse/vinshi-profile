@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+/* Hero image positioning fix */
+#hero img {
+  object-fit: contain !important;
+  object-position: center bottom !important;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #hero img {
+    object-position: center bottom 5% !important;
+  }
+}
+
+/* Laptop and Desktop */
+@media (min-width: 1024px) {
+  #hero img {
+    object-position: center bottom 10% !important;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  #hero img {
+    object-position: center bottom 15% !important;
+  }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 1920px) {
+  #hero img {
+    object-position: center bottom 20% !important;
+  }
+}
+
+/* Optional: Add background to fill empty space */
+#hero {
+  background-color: #f3ede7; /* Matches your site’s background */
+}
