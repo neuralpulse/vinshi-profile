@@ -16,7 +16,7 @@ export default function App() {
       <main className="flex-grow w-full">
         <Routes>
           <Route
-            path="/"
+            path="/vinshi-profile"
             element={
               <Home sectionRef={sectionRef} handleScroll={handleScroll} />
             }
