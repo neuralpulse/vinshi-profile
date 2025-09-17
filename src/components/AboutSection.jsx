@@ -18,7 +18,7 @@ export default function AboutSection() {
         {" "}
         {/* Changed to w-screen for full width */}
         <div className="flex flex-col justify-center px-12 lg:px-24 py-16 space-y-6">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-black">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-[#4d2a2a]">
             VINSHIKA JAIN
           </h1>
 

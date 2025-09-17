@@ -1,5 +1,6 @@
 import React from "react";
-import { FileText, Share2, Mail, Target } from "lucide-react"; // Updated imports for better semantic fit
+import { FileText, Share2, Mail, Target } from "lucide-react";
+import { motion } from "framer-motion"; // Import framer motion
 
 const skills = [
   {
@@ -26,31 +27,48 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="w-full bg-[#f3ede7] py-16 mb-1" id="skills">
+    <section
+      className="w-full min-h-screen bg-[#f3ede7] py-20 flex flex-col justify-center mb-1"
+      id="skills"
+    >
       {/* Heading */}
-      <h3 className="text-3xl md:text-4xl font-bold text-center text-[#2d1b3d] mb-12 uppercase tracking-wide">
+      <motion.h3
+        className="text-3xl md:text-4xl font-bold text-center text-[#4d2a2a] mb-16 uppercase tracking-wide"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
         SKILL SETS
-      </h3>
+      </motion.h3>
 
       {/* Skills Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-4 border-t border-b divide-x divide-gray-200 bg-white shadow-sm rounded-lg mx-4 md:mx-0">
+      <div className="grid grid-cols-1 md:grid-cols-4 border-t border-b divide-x divide-gray-200 bg-white shadow-lg rounded-lg mx-6 md:mx-12">
         {skills.map((skill, index) => (
-          <div
+          <motion.div
             key={skill.name}
-            className={`flex flex-col items-center justify-center text-center px-6 py-12 ${
+            className={`flex flex-col items-center justify-center text-center px-6 py-16 ${
               index !== 0 ? "border-l border-gray-200" : ""
             }`}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
           >
-            <div className="text-[#2d1b3d] mb-4 p-2 rounded-full bg-[#f3ede7]">
+            <motion.div
+              className="text-[#2d1b3d] mb-6 p-4 rounded-full bg-[#f3ede7] shadow-md"
+              whileHover={{ scale: 1.2, rotate: 8 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               {skill.icon}
-            </div>
-            <h4 className="text-lg font-semibold mb-2 text-[#2d1b3d]">
+            </motion.div>
+            <h4 className="text-xl font-semibold mb-3 text-[#2d1b3d]">
               {skill.name}
             </h4>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-base leading-relaxed">
               {skill.desc}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
