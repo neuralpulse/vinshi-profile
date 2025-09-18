@@ -29,7 +29,6 @@ export default function Hero({ sectionRef }) {
       id="hero"
       ref={sectionRef}
     >
-      {/* Mobile Image */}
       <img
         src={mobileHero}
         alt="Hero Background Mobile"
@@ -56,8 +55,8 @@ export default function Hero({ sectionRef }) {
         >
           {/* Heading */}
           <h1
-            className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 
-             font-extrabold leading-tight drop-shadow-lg
+            className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 
+             font-bold leading-tight drop-shadow-lg
              transform -translate-y-12 sm:-translate-y-16 md:-translate-y-10"
           >
             <span className="block">Where Strategy</span>
@@ -67,7 +66,7 @@ export default function Hero({ sectionRef }) {
 
           {/* Subheading */}
           <motion.p
-            className="text-2xl font-bold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-relaxed py-5
+            className="text-2xl font-medium sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl leading-relaxed py-5
                        mt-65 sm:mt-6 md:mt-10"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
