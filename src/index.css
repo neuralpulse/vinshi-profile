@@ -19,6 +19,18 @@
   object-position: center center !important;
   display: block; /* removes inline gap */
 }
+.mobile-hero {
+  object-position: 100% 20% !important;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #hero .desktop-hero {
+    display: none !important;
+  }
+  #hero .mobile-hero {
+    display: block !important;
+  }
+}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {

@@ -339,7 +339,24 @@ export default function PortfolioGrid() {
 
             {/* Carousel */}
             <div className="relative">
-              <div className="overflow-hidden">
+              <div
+                className="overflow-hidden"
+                onTouchStart={(e) =>
+                  (e.currentTarget.touchStartX = e.touches[0].clientX)
+                }
+                onTouchEnd={(e) => {
+                  const touchEndX = e.changedTouches[0].clientX;
+                  const touchStartX = e.currentTarget.touchStartX;
+
+                  if (touchStartX - touchEndX > 50) {
+                    // Swipe left → next slide
+                    nextSlide();
+                  } else if (touchEndX - touchStartX > 50) {
+                    // Swipe right → previous slide
+                    prevSlide();
+                  }
+                }}
+              >
                 <div
                   className="flex transition-transform duration-500 ease-in-out"
                   style={{
@@ -348,7 +365,7 @@ export default function PortfolioGrid() {
                 >
                   {selectedProject.carouselContent.map((content, index) => (
                     <div key={index} className="w-full flex-shrink-0 p-8">
-                      <div className="flex flex-col lg:flex-row gap-8 items-start">
+                      <div className="flex flex-col lg:flex-row gap-10 items-start">
                         {/* Image */}
                         <div className="lg:w-1/2 w-full">
                           <div className="relative aspect-video rounded-lg overflow-hidden flex items-center justify-center bg-white">
@@ -361,11 +378,11 @@ export default function PortfolioGrid() {
                         </div>
 
                         {/* Text */}
-                        <div className="lg:w-1/2 w-full space-y-4 overflow-y-auto max-h-[60vh]">
+                        <div className="lg:w-1/2 w-full space-y-4 overflow-y-auto max-h-[60vh] pr-2">
                           <h4 className="text-2xl font-bold text-gray-800 leading-tight">
                             {content.text}
                           </h4>
-                          <p className="text-gray-600 text-lg leading-relaxed">
+                          <p className="text-gray-600 text-lg leading-relaxed text-justify">
                             {content.body}
                           </p>
 
@@ -392,36 +409,39 @@ export default function PortfolioGrid() {
                 </div>
               </div>
 
-              {/* Navigation */}
+              {/* Navigation & Dots */}
               {selectedProject.carouselContent.length > 1 && (
-                <>
+                <div className="flex justify-center items-center space-x-4 py-4">
+                  {/* Prev Button */}
                   <button
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white shadow-lg p-3 rounded-full hover:bg-gray-50 transition-colors z-10"
+                    className="bg-white shadow-lg p-3 rounded-full 
+       hover:bg-gray-50 transition-colors z-20"
                     onClick={prevSlide}
                   >
                     ◀
                   </button>
+
+                  {/* Dots */}
+                  <div className="flex space-x-2">
+                    {selectedProject.carouselContent.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`w-3 h-3 rounded-full transition-colors ${
+                          index === currentSlide ? "bg-gray-800" : "bg-gray-300"
+                        }`}
+                        onClick={() => setCurrentSlide(index)}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Next Button */}
                   <button
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white shadow-lg p-3 rounded-full hover:bg-gray-50 transition-colors z-10"
+                    className="bg-white shadow-lg p-3 rounded-full 
+       hover:bg-gray-50 transition-colors z-20"
                     onClick={nextSlide}
                   >
                     ▶
                   </button>
-                </>
-              )}
-
-              {/* Dots */}
-              {selectedProject.carouselContent.length > 1 && (
-                <div className="flex justify-center space-x-2 py-4">
-                  {selectedProject.carouselContent.map((_, index) => (
-                    <button
-                      key={index}
-                      className={`w-3 h-3 rounded-full transition-colors ${
-                        index === currentSlide ? "bg-gray-800" : "bg-gray-300"
-                      }`}
-                      onClick={() => setCurrentSlide(index)}
-                    />
-                  ))}
                 </div>
               )}
             </div>

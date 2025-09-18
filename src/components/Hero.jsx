@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import mobileHero from "../assets/icec.jpg";
-import desktopHero from "../assets/image.png";
+import mobileHero from "../assets/mobice.jpg";
+import desktopHero from "../assets/lapice.jpg";
 
 export default function Hero({ sectionRef }) {
   const nav = useNavigate();
@@ -33,18 +33,18 @@ export default function Hero({ sectionRef }) {
       <img
         src={mobileHero}
         alt="Hero Background Mobile"
-        className="absolute inset-0 w-full h-full object-cover object-center block md:hidden"
+        className="mobile-hero absolute inset-0 w-full h-full object-cover hidden"
+        style={{ objectPosition: "50% 20%" }}
       />
 
-      {/* Desktop Image */}
       <img
         src={desktopHero}
         alt="Hero Background Desktop"
-        className="absolute inset-0 w-full h-full object-cover object-center hidden md:block"
+        className="desktop-hero absolute inset-0 w-full h-full object-cover block brightness-100"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-b  from-white/0 via-white/2 to-white/5"></div>
 
       {/* Text Section */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4 sm:px-6 md:px-8 lg:px-12">
@@ -56,8 +56,9 @@ export default function Hero({ sectionRef }) {
         >
           {/* Heading */}
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight drop-shadow-lg
-                     md:mt-[-5%] lg:mt-[-8%]"
+            className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 
+             font-extrabold leading-tight drop-shadow-lg
+             transform -translate-y-12 sm:-translate-y-16 md:-translate-y-10"
           >
             <span className="block">Where Strategy</span>
             <span className="block">Meets</span>
@@ -66,12 +67,13 @@ export default function Hero({ sectionRef }) {
 
           {/* Subheading */}
           <motion.p
-            className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-relaxed py-5"
+            className="text-2xl font-bold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-relaxed py-5
+                       mt-65 sm:mt-6 md:mt-10"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 3.5 }}
+            transition={{ duration: 1, delay: 1 }}
           >
-            Your creative journey starts here.
+            Your creative journey starts here
           </motion.p>
         </motion.div>
       </div>

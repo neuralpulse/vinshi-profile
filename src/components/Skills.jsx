@@ -1,6 +1,6 @@
 import React from "react";
 import { FileText, Share2, Mail, Target } from "lucide-react";
-import { motion } from "framer-motion"; // Import framer motion
+import { motion } from "framer-motion";
 
 const skills = [
   {
