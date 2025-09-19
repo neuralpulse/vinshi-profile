@@ -20,7 +20,6 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div className="text-lg text-black mb-8">
-          <p className="font-semibold">+91 78787 98415</p>
           <p className="font-medium">vinshikajain@gmail.com</p>
         </div>
 

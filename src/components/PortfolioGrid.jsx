@@ -318,7 +318,7 @@ export default function PortfolioGrid() {
           }}
         >
           <motion.div
-            className="bg-white rounded-lg max-w-5xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
+            className="bg-white rounded-lg max-w-5xl w-full max-h-[90vh] flex flex-col shadow-2xl"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
@@ -337,114 +337,105 @@ export default function PortfolioGrid() {
               </button>
             </div>
 
-            {/* Carousel */}
-            <div className="relative">
-              <div
-                className="overflow-hidden"
-                onTouchStart={(e) =>
-                  (e.currentTarget.touchStartX = e.touches[0].clientX)
-                }
-                onTouchEnd={(e) => {
-                  const touchEndX = e.changedTouches[0].clientX;
-                  const touchStartX = e.currentTarget.touchStartX;
-
-                  if (touchStartX - touchEndX > 50) {
-                    // Swipe left → next slide
-                    nextSlide();
-                  } else if (touchEndX - touchStartX > 50) {
-                    // Swipe right → previous slide
-                    prevSlide();
-                  }
-                }}
-              >
+            {/* Content area (scrollable if long) */}
+            <div className="flex-1 overflow-y-auto">
+              <div className="relative">
                 <div
-                  className="flex transition-transform duration-500 ease-in-out"
-                  style={{
-                    transform: `translateX(-${currentSlide * 100}%)`,
+                  className="overflow-hidden"
+                  onTouchStart={(e) =>
+                    (e.currentTarget.touchStartX = e.touches[0].clientX)
+                  }
+                  onTouchEnd={(e) => {
+                    const touchEndX = e.changedTouches[0].clientX;
+                    const touchStartX = e.currentTarget.touchStartX;
+
+                    if (touchStartX - touchEndX > 50) nextSlide();
+                    else if (touchEndX - touchStartX > 50) prevSlide();
                   }}
                 >
-                  {selectedProject.carouselContent.map((content, index) => (
-                    <div key={index} className="w-full flex-shrink-0 p-8">
-                      <div className="flex flex-col lg:flex-row gap-10 items-start">
-                        {/* Image */}
-                        <div className="lg:w-1/2 w-full">
-                          <div className="relative aspect-video rounded-lg overflow-hidden flex items-center justify-center bg-white">
-                            <img
-                              src={content.image}
-                              alt={content.text}
-                              className="w-full h-full object-contain"
-                            />
+                  <div
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{
+                      transform: `translateX(-${currentSlide * 100}%)`,
+                    }}
+                  >
+                    {selectedProject.carouselContent.map((content, index) => (
+                      <div key={index} className="w-full flex-shrink-0 p-6">
+                        <div className="flex flex-col lg:flex-row gap-6 items-start">
+                          {/* Image */}
+                          <div className="lg:w-1/2 w-full">
+                            <div className="relative aspect-video rounded-lg overflow-hidden flex items-center justify-center bg-white">
+                              <img
+                                src={content.image}
+                                alt={content.text}
+                                className="w-full h-full object-contain"
+                              />
+                            </div>
+                          </div>
+
+                          {/* Text (scrolls if long) */}
+                          <div className="lg:w-1/2 w-full space-y-4 overflow-y-auto max-h-[55vh] pr-2">
+                            <h4 className="text-2xl font-bold text-gray-800 leading-tight">
+                              {content.text}
+                            </h4>
+                            <p className="text-gray-600 text-lg leading-relaxed text-justify">
+                              {content.body}
+                            </p>
+
+                            {content.links && (
+                              <div className="flex flex-wrap gap-4 pt-2">
+                                {content.links.map((l, i) => (
+                                  <a
+                                    key={i}
+                                    href={l.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[#4d2a2a] font-medium hover:underline"
+                                  >
+                                    {l.label}↗
+                                  </a>
+                                ))}
+                              </div>
+                            )}
                           </div>
                         </div>
-
-                        {/* Text */}
-                        <div className="lg:w-1/2 w-full space-y-4 overflow-y-auto max-h-[60vh] pr-2">
-                          <h4 className="text-2xl font-bold text-gray-800 leading-tight">
-                            {content.text}
-                          </h4>
-                          <p className="text-gray-600 text-lg leading-relaxed text-justify">
-                            {content.body}
-                          </p>
-
-                          {/* Render Links if any */}
-                          {content.links && (
-                            <div className="flex flex-wrap gap-4 pt-2">
-                              {content.links.map((l, i) => (
-                                <a
-                                  key={i}
-                                  href={l.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-[#4d2a2a] font-medium hover:underline"
-                                >
-                                  {l.label}↗
-                                </a>
-                              ))}
-                            </div>
-                          )}
-                        </div>
                       </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Navigation & Dots */}
-              {selectedProject.carouselContent.length > 1 && (
-                <div className="flex justify-center items-center space-x-4 py-4">
-                  {/* Prev Button */}
-                  <button
-                    className="bg-white shadow-lg p-3 rounded-full 
-       hover:bg-gray-50 transition-colors z-20"
-                    onClick={prevSlide}
-                  >
-                    ◀
-                  </button>
-
-                  {/* Dots */}
-                  <div className="flex space-x-2">
-                    {selectedProject.carouselContent.map((_, index) => (
-                      <button
-                        key={index}
-                        className={`w-3 h-3 rounded-full transition-colors ${
-                          index === currentSlide ? "bg-gray-800" : "bg-gray-300"
-                        }`}
-                        onClick={() => setCurrentSlide(index)}
-                      />
                     ))}
                   </div>
-
-                  {/* Next Button */}
-                  <button
-                    className="bg-white shadow-lg p-3 rounded-full 
-       hover:bg-gray-50 transition-colors z-20"
-                    onClick={nextSlide}
-                  >
-                    ▶
-                  </button>
                 </div>
-              )}
+              </div>
             </div>
+
+            {/* Bottom navigation (always visible) */}
+            {selectedProject.carouselContent.length > 1 && (
+              <div className="flex justify-center items-center space-x-4 p-4 border-t border-gray-200 bg-white sticky bottom-0">
+                <button
+                  className="bg-white shadow p-3 rounded-full hover:bg-gray-50"
+                  onClick={prevSlide}
+                >
+                  ◀
+                </button>
+
+                <div className="flex space-x-2">
+                  {selectedProject.carouselContent.map((_, index) => (
+                    <button
+                      key={index}
+                      className={`w-3 h-3 rounded-full transition-colors ${
+                        index === currentSlide ? "bg-gray-800" : "bg-gray-300"
+                      }`}
+                      onClick={() => setCurrentSlide(index)}
+                    />
+                  ))}
+                </div>
+
+                <button
+                  className="bg-white shadow p-3 rounded-full hover:bg-gray-50"
+                  onClick={nextSlide}
+                >
+                  ▶
+                </button>
+              </div>
+            )}
           </motion.div>
         </div>
       )}

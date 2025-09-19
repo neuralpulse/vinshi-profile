@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import mobileHero from "../assets/mobice.jpg";
-import desktopHero from "../assets/lapice.jpg";
+import mobileHero from "../assets/mobice.webp";
+import desktopHero from "../assets/lapice.webp";
 
 export default function Hero({ sectionRef }) {
   const nav = useNavigate();
@@ -32,18 +32,20 @@ export default function Hero({ sectionRef }) {
       <img
         src={mobileHero}
         alt="Hero Background Mobile"
-        className="mobile-hero absolute inset-0 w-full h-full object-cover hidden"
+        loading="eager"
+        className="mobile-hero absolute inset-0 w-full h-full object-cover hidden "
         style={{ objectPosition: "50% 20%" }}
       />
 
       <img
         src={desktopHero}
         alt="Hero Background Desktop"
-        className="desktop-hero absolute inset-0 w-full h-full object-cover block brightness-100"
+        loading="eager"
+        className="desktop-hero absolute inset-0 w-full h-full object-cover block "
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b  from-white/0 via-white/2 to-white/5"></div>
+      <div className="absolute inset-0 bg-gradient-to-b  from-black/0 via-black/2 to-black/3"></div>
 
       {/* Text Section */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4 sm:px-6 md:px-8 lg:px-12">
@@ -61,7 +63,7 @@ export default function Hero({ sectionRef }) {
           >
             <span className="block">Where Strategy</span>
             <span className="block">Meets</span>
-            <span className="block">Creativity.</span>
+            <span className="block">Creativity</span>
           </h1>
 
           {/* Subheading */}
