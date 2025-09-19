@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+import rumlogo from "../assets/rumlogo.jpg";
+import seeplogo from "../assets/seeplogo.jpg";
+
 const projects = [
   {
     id: 1,
@@ -214,7 +217,27 @@ const projects = [
     title: "Email Marketing",
     image:
       "https://blog.blendee.com/wp-content/uploads/2024/11/email-marketing.jpg",
-    carouselContent: [],
+    carouselContent: [
+      {
+        image: rumlogo,
+        text: "Burning Barn Rum",
+        body: "",
+        links: [],
+      },
+      {
+        image: seeplogo,
+        text: "Seep",
+        body: "",
+        links: [],
+      },
+      {
+        image:
+          "https://cottontwist.co.uk/cdn/shop/files/Navy_-_Horizontal_strapline.png?v=1740757188&width=600",
+        text: "Cotton Twist",
+        body: "",
+        links: [],
+      },
+    ],
   },
 ];
 

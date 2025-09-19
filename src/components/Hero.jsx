@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import mobileHero from "../assets/mobice.webp";
-import desktopHero from "../assets/lapice.webp";
+import mobileHero from "../assets/mobice.jpg";
+import desktopHero from "../assets/lapice.jpg";
 
 export default function Hero({ sectionRef }) {
   const nav = useNavigate();
@@ -45,12 +45,12 @@ export default function Hero({ sectionRef }) {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b  from-black/0 via-black/2 to-black/3"></div>
+      <div className="absolute inset-0 bg-gradient-to-b  from-black/10 via-black/15 to-black/30"></div>
 
       {/* Text Section */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4 sm:px-6 md:px-8 lg:px-12">
         <motion.div
-          className="max-w-5xl mx-auto text-[#4d2a2a]"
+          className="max-w-5xl mx-auto text-[#ffffff]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}

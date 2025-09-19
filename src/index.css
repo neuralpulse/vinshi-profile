@@ -17,7 +17,6 @@
   height: 100%;
   object-fit: cover !important;
   object-position: center center !important;
-  display: block; /* removes inline gap */
 }
 .mobile-hero {
   object-position: 100% 20% !important;
