@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import mobileHero from "../assets/mobice.jpg";
 import desktopHero from "../assets/lapice.jpg";
 
 export default function Hero({ sectionRef }) {
-  const nav = useNavigate();
   const [navbarHeight, setNavbarHeight] = useState(0);
 
   useEffect(() => {
