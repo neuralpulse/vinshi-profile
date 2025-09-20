@@ -6,7 +6,7 @@ import "./index.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/vinshi-profile">
       <App />
     </BrowserRouter>
   </React.StrictMode>
