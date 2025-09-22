@@ -1,8 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
-import rumlogo from "../assets/rumlogo.jpg";
 import seeplogo from "../assets/seeplogo.jpg";
+import sm1 from "../assets/sm1.webp";
+import sm2 from "../assets/sm2.webp";
+import sm3 from "../assets/sm3.webp";
+import sm4 from "../assets/sm4.webp";
+import sm5 from "../assets/sm5.webp";
+import em1 from "../assets/em1.webp";
+import em3 from "../assets/em3.webp";
+import em4 from "../assets/em4.avif";
+import em5 from "../assets/em5.webp";
+import cm1 from "../assets/cm1.webp";
+import cm2 from "../assets/cm2.webp";
+import cm3 from "../assets/cm3.webp";
+import cm4 from "../assets/cm4.webp";
+import cm5 from "../assets/cm5.webp";
+import cm6 from "../assets/cm6.webp";
 
 const projects = [
   {
@@ -14,7 +27,7 @@ const projects = [
       {
         image:
           "https://www.meghnacolour.com/wp-content/uploads/2024/09/Frame-2-1-e1727763068203.png",
-        text: "B2B Content Strategy l Meghna Colours",
+        text: "B2B Content Strategy | Meghna Colours",
         body: "Partnered with Meghna Colours to grow their LinkedIn presence through engaging content that highlighted their expertise and industry impact. Crafted LinkedIn content to boost brand visibility and showcase Meghna Colours’ expertise in pigment manufacturing for B2B audiences.",
         links: [
           {
@@ -60,14 +73,117 @@ const projects = [
         ],
       },
       {
-        image:
-          "https://www.americaandbeyond.com/cdn/shop/files/A_BNewLogo_2.jpg?v=1613758675&width=320",
-        text: "America and Beyond",
-        body: "Crafted conversion-focused email campaigns for this ethical, bohemian fashion brand — blending story-driven copy with smart strategy to boost engagement and sales.",
+        image: sm1,
+        text: "Hi Ice",
+        body: "Hi Ice is a gelato brand based in Vapi, Gujarat, bringing a fresh, playful, and aesthetic identity to the frozen dessert space. I joined from the very beginning, building the brand from scratch, setting its tone of voice, copy aesthetic, and overall strategy. My role included creating content, managing shoots, and handling posting across Meta & Pinterest. Within just a few months, the brand achieved 1,00,000+ organic reach and saw a significant increase in followers, establishing its presence in a competitive market.",
         links: [
           {
-            label: "America and Beyond",
-            url: "https://www.americaandbeyond.com/?srsltid=AfmBOoogzG2XjtMG0_70AJvXO2X1YNE1zpyEC8pHa3sHOcdejZyc80XQ",
+            label: "Post 1",
+            url: "https://www.instagram.com/p/DJwvV3RIozd/",
+          },
+          {
+            label: "Post 2",
+            url: "https://www.instagram.com/p/DMS5qnSS43w/",
+          },
+        ],
+      },
+      {
+        image: sm2,
+        text: "Witty Wolf Coffee",
+        body: "Witty Wolf is a coffee brand started by a couple with a passion for coffee. They approached us to build their social media presence from the ground up. I onboarded as a **Strategist, Copywriter, Shoot Coordinator & Social Media Specialist**, managing their account for four months. During this time, I created and executed content strategies around trends, educational posts, and brand storytelling to build an **authentic following** and establish Witty Wolf’s digital identity.",
+        links: [
+          {
+            label: "Proof Of Work",
+            url: "https://www.instagram.com/p/DHS8NBLiC8s/",
+          },
+          {
+            label: "Influencer Collab and Trends",
+            url: "https://www.instagram.com/wittywolfcoffee/reel/DFXTAXSMiEk/",
+          },
+          {
+            label: "Founders Led Reels",
+            url: "https://www.instagram.com/p/DGIfwJqoUeX/",
+          },
+          {
+            label: "Carousel Content ",
+            url: "https://www.instagram.com/p/DGX7GcExQfb/?img_index=1",
+          },
+          {
+            label: "Static Posts",
+            url: "https://www.instagram.com/p/DHDnrHVsHGU/",
+          },
+        ],
+      },
+      {
+        image: sm3,
+        text: "One Carat",
+        body: "One Carat is an India-based jewellery brand specialising in gold, silver, and lab-grown diamond jewellery. I worked as a **Social Media Strategist**, where I managed brand shoots, crafted content, and handled posting to establish a consistent and premium digital presence. My role focused on highlighting One Carat’s designs and product range while building audience engagement through curated storytelling.",
+        links: [
+          {
+            label: "Post 1",
+            url: "https://www.instagram.com/p/DOXpFUsiFnu/",
+          },
+          {
+            label: "Post 2",
+            url: "https://www.instagram.com/p/DNnMUVDII_F/",
+          },
+          {
+            label: "Post 3",
+            url: "https://www.instagram.com/p/DNNgILZzjPf/",
+          },
+          {
+            label: "Post 4",
+            url: "https://www.instagram.com/p/DMfWemyICre/",
+          },
+          {
+            label: "Post 5",
+            url: "https://www.instagram.com/p/DMkdeUjIB_c/",
+          },
+          {
+            label: "Post 6",
+            url: "https://www.instagram.com/p/DOI6oMfCH1L/",
+          },
+        ],
+      },
+      {
+        image: sm4,
+        text: "Dhruv Agencies",
+        body: "Dhruv Agencies is a middle man company that helps customer get best kind of motor, solar, and other gears for their company. I worked as their social media manager, content writer and created social media content and emailer for the brand",
+        links: [
+          {
+            label: "Product Based Posts",
+            url: "https://www.instagram.com/p/DD9FjVzNUQ2/",
+          },
+          {
+            label: "Festival Posting ",
+            url: "https://www.instagram.com/p/DBxrjUTN0gk/",
+          },
+          {
+            label: "Static",
+            url: "https://www.instagram.com/p/DBGymGlNl75/",
+          },
+        ],
+      },
+      {
+        image: sm5,
+        text: "Prithvi Exchange",
+        body: "Prithvi Exchange is a trusted name in the forex industry with over 30 years of excellence. An RBI Authorized Dealer (Category II) and a BSE-listed entity, the company has a strong pan-India presence. As a Copywriter, Social Media Manager & Performance Marketer, I wrote, managed, and ran performance-driven campaigns for Prithvi Exchange. Channels We handled :",
+        links: [
+          {
+            label: "LinkedIn",
+            url: "https://www.linkedin.com/company/prithvi-softech-limited/",
+          },
+          {
+            label: "Instagram",
+            url: "https://www.instagram.com/prithviexchange/",
+          },
+          {
+            label: "Twitter",
+            url: "https://x.com/prithviexchange?ref_src=twsrc%5Etfw",
+          },
+          {
+            label: "Facebook",
+            url: "https://www.facebook.com/PrithviExchange/about/?_rdr",
           },
         ],
       },
@@ -79,6 +195,62 @@ const projects = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnI4wvBPuAIgfusVdnbobAXavIHseze0moPg&s",
     carouselContent: [
+      {
+        image: cm1,
+        text: "Caaru",
+        body: "Caaru is a Jaipur-based, homegrown brand founded by a father-daughter duo, with their mother as the first customer and inspiration. Rooted in the Sanskrit word *Charu* (meaning beautiful), Caaru celebrates the beauty of imperfection through natural, mindful products. As a Blog Writer, I crafted brand stories and blog content that reflected Caaru’s authentic, family-driven origin and its philosophy of embracing natural beauty.",
+        links: [
+          {
+            label: "Rice Water for Hair Growth: Does It Really Work?",
+            url: "https://caaruforyou.com/rice-water-for-hair-growth-does-it-really-work/",
+          },
+          {
+            label: "How to Make Your Hair Color Last Longer",
+            url: "https://caaruforyou.com/how-to-make-your-hair-color-last-longer/",
+          },
+          {
+            label: "How to Use Henna Hair Color",
+            url: "https://caaruforyou.com/henna-hair-color-guide-easy-steps-for-beginners/",
+          },
+          {
+            label:
+              "Why Caaru’s Henna-Based Hair Color is the Best Natural Alternative in 2025",
+            url: "https://caaruforyou.com/why-caarus-henna-based-hair-color-is-the-best-natural-alternative-in-2025/",
+          },
+          {
+            label: "The Truth About Rosemary Oil for Hair Growth",
+            url: "https://caaruforyou.com/rosemary-oil-for-hair-growth-benefits/",
+          },
+        ],
+      },
+      {
+        image: cm2,
+        text: "Wemine",
+        body: "Wemine is a Dubai-based company dedicated to making cryptocurrency mining accessible to all. They provide cutting-edge crypto mining machines and accessories designed for optimal performance, catering to both seasoned miners and beginners venturing into the crypto space. With a mission to empower miners across the UAE and beyond, Wemine positions itself as a trusted partner offering expertise, guidance, and top-of-the-line equipment for long-term success. I wrote blogs for them, here are the links for few of the published blogs.",
+        links: [
+          {
+            label: "Blog 1",
+            url: "https://wemine.ae/emirates-airlines-to-accept-bitcoin-and-ethereum-making-travel-payments-easier-faster/",
+          },
+          {
+            label: "Blog 2",
+            url: "https://wemine.ae/uae-bitcoin-mining-boom-gcc-crypto-investments/",
+          },
+          {
+            label: "Blog 3",
+            url: "http://wemine.ae/crypto-scams-2025-7-investor-traps-exposed/",
+          },
+          {
+            label: "Blog 4",
+            url: "https://wemine.ae/bitcoin-vs-bank-savings-2025-investment-guide/",
+          },
+          {
+            label: "Blog 5",
+            url: "https://wemine.ae/crypto-mining-uae-simple-cryptocurrency-trading/",
+          },
+        ],
+      },
+
       {
         image:
           "https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/images/panoramic/getty_177470402_2000133320009280142_345636.jpg",
@@ -104,8 +276,7 @@ const projects = [
         ],
       },
       {
-        image:
-          "https://searchengineland.com/wp-content/seloads/2015/10/graph-line-trend-analytics-magnifying-glass-ss-1920.jpg",
+        image: cm3,
         text: "Trends",
         body: "Marketing insights and case studies.",
         links: [
@@ -121,29 +292,230 @@ const projects = [
             label: "Trends To Look Out For In 2023",
             url: "https://vinshikajain.notion.site/Trends-To-Look-Out-For-In-2023-609fee472000440387c369d9c3f0c895",
           },
+          {
+            label:
+              "Do We Need To Worry About ChatGPT? Diving Into AI And Technology",
+            url: "https://vinshikajain.notion.site/Do-We-Need-To-Worry-About-ChatGPT-Diving-Into-AI-And-Technology-242a5fa3001e47cfb75337af7f41e8fe",
+          },
+        ],
+      },
+      {
+        image: cm4,
+        text: "Web 3.0",
+        body: "",
+        links: [
+          {
+            label: "How can you save yourself from paying massive Gas Fees1",
+            url: "https://vinshikajain.notion.site/How-can-you-save-yourself-from-paying-massive-Gas-Fees-da04641405164eeb87c1b7a843238491",
+          },
+          {
+            label: "Why choose polygon to launch your IDO and NFT projects?",
+            url: "https://vinshikajain.notion.site/Why-choose-polygon-to-launch-your-IDO-and-NFT-projects-97abe4dea3a847d6a1f6c96ab7ff770c",
+          },
+          {
+            label: "NFTS and Why they are the future.",
+            url: "https://vinshikajain.notion.site/NFTS-and-Why-they-are-the-future-ee81c1cf202b401582c3953334d3573b",
+          },
+          {
+            label: "What Ethereum issues is Polygon addressing?",
+            url: "https://vinshikajain.notion.site/What-Ethereum-issues-is-Polygon-addressing-0c0ebfeb990445a698abec3150acf4ec",
+          },
+          {
+            label: "Avalanche vs Polygon vs Binance Smart Chain",
+            url: "https://vinshikajain.notion.site/Avalanche-vs-Polygon-vs-Binance-Smart-Chain-ccb746cca5774174bca5f7378e3d5eb3",
+          },
+          {
+            label: "What is Eth 2.0 and why is it important?",
+            url: "https://vinshikajain.notion.site/What-is-Eth-2-0-and-why-is-it-important-ee3c4bdac61248a9a70731d094cb7068",
+          },
+          {
+            label: "Importance of DEX Aggregators in the DeFi Ecosystem**",
+            url: "https://vinshikajain.notion.site/Importance-of-DEX-Aggregators-in-the-DeFi-Ecosystem-81a9c19908f74e19a58882c4dc2b1a43",
+          },
+          {
+            label: "Layer 1 vs. Layer 2",
+            url: "https://vinshikajain.notion.site/Layer-1-vs-Layer-2-76298990670f4f79963acb8eee435a49",
+          },
+          {
+            label: "What is Yield Farming?",
+            url: "https://vinshikajain.notion.site/What-is-Yield-Farming-9de5363f6d824cd3b492dee735d5062b",
+          },
+          {
+            label: "What are Liquidity Pools?",
+            url: "https://vinshikajain.notion.site/What-are-Liquidity-Pools-167608a3703b4fb0bbae2e139f6c4471",
+          },
+          {
+            label: "What is Gas and why does every penny count?",
+            url: "https://vinshikajain.notion.site/What-is-Gas-and-why-does-every-penny-count-8ffcaa81cbed454c8f9905489c05b633",
+          },
+        ],
+      },
+      {
+        image: cm6,
+        text: "Market Research",
+        body: "",
+        links: [
+          {
+            label: "How to monetize trivia games with rewarded surveys",
+            url: "https://vinshikajain.notion.site/How-to-monetize-trivia-games-with-rewarded-surveys-1186299115cd45b39cf40d443dc074d3",
+          },
+          {
+            label:
+              "05 hottest advertising trends in 2022 and how can market research help you make the most of them?",
+            url: "https://vinshikajain.notion.site/05-hottest-advertising-trends-in-2022-and-how-can-market-research-help-you-make-the-most-of-them-9452ee4f6df54a48a35c6e4c69c56069",
+          },
+          {
+            label:
+              "From URL to IRL: How Top Brands Are Meeting Consumers Where They Are",
+            url: "https://vinshikajain.notion.site/From-URL-to-IRL-How-Top-Brands-Are-Meeting-Consumers-Where-They-Are-a6131b2bf95145489a467b91631b624a",
+          },
+          {
+            label:
+              "The rise of the GIG economy - how does it impact your consumers",
+            url: "https://vinshikajain.notion.site/The-rise-of-the-GIG-economy-how-does-it-impact-your-consumers-ff1cee1ae31d4022801b233a75ed49c7",
+          },
+          {
+            label: "How To Avoid Selection Bias In Market Research",
+            url: "https://vinshikajain.notion.site/How-To-Avoid-Selection-Bias-In-Market-Research-f6a42cf2600d4cc78f2e5fb0574f5e36",
+          },
+          {
+            label: "Everything about the evolving metaverse market",
+            url: "https://vinshikajain.notion.site/Everything-about-the-evolving-metaverse-market-84543f6ad70a4518b7cbedda9d4778dc",
+          },
+          {
+            label:
+              "How brands can adapt to evolving attitudes to social media influencers – real and virtual",
+            url: "https://vinshikajain.notion.site/How-brands-can-adapt-to-evolving-attitudes-to-social-media-influencers-real-and-virtual-68e187958049451ca521d192b2ffab19",
+          },
+          {
+            label:
+              "How to tap into your target audience using consumer insights",
+            url: "https://vinshikajain.notion.site/How-to-tap-into-your-target-audience-using-consumer-insights-d37d7b2bac554abd81e010d523c2c1de",
+          },
+          {
+            label: "Survey Offerwalls",
+            url: "https://vinshikajain.notion.site/Survey-Offerwalls-1cd094671b7e4a9da8544e8ca0b48dd7",
+          },
+          {
+            label: "How to use surveys for lead generation",
+            url: "https://vinshikajain.notion.site/How-to-use-surveys-for-lead-generation-cb07815af2bf495bbef1e6c7b1d916b6",
+          },
+          {
+            label: "What is Big Data?",
+            url: "https://vinshikajain.notion.site/What-is-Big-Data-fb27bf75f1224ee29e8f0358f6f750c6",
+          },
         ],
       },
       {
         image:
-          "https://vinshikajain.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb6505641-f198-4ba3-be31-18b5fecd84f2%2F7438.png?id=c8c2b0bc-2379-41ee-942d-7d54c146b0ef&table=block&spaceId=ae0e8bc9-318c-42b7-9150-fcd3afc148a0&width=250&userId=&cache=v2",
-        text: "ZeroSwap | Website & Newsletter Content",
-        body: "Weekly updates on crypto and NFTs through engaging newsletters.",
+          "https://static.toiimg.com/thumb/msid-120797470,width-1280,height-720,resizemode-4/120797470.jpg",
+        text: "Travel",
+        body: "",
         links: [
           {
-            label: "ZeroSwap - Weekly Crypto & NFT #1",
-            url: "https://vinshikajain.notion.site/ZeroSwap-Weekly-Crypto-NFT-c8c2b0bc237941ee942d7d54c146b0ef",
+            label: "Benefits of using a forex card while traveling",
+            url: "https://vinshikajain.notion.site/Benefits-of-using-a-forex-card-while-traveling-52fd136c180d40e986d714856481e0ca",
           },
           {
-            label: "ZeroSwap - Weekly Crypto & NFT #2",
-            url: "https://vinshikajain.notion.site/ZeroSwap-Weekly-Crypto-NFT-74549b783f9c4e23b7c6a0d6d3a49b54",
+            label: "Tips to avoid money transfer fraud",
+            url: "https://vinshikajain.notion.site/Tips-to-avoid-money-transfer-fraud-538e68b425534128968d01650cd2788a",
+          },
+          {
+            label:
+              "How to utilize the leftover foreign currency after coming back to India?",
+            url: "https://vinshikajain.notion.site/How-to-utilize-the-leftover-foreign-currency-after-coming-back-to-India-3dca97255f2a429f994dc3decd3994ce",
+          },
+          {
+            label:
+              "Travfx- the smartest and easiest way to transfer money from India",
+            url: "https://vinshikajain.notion.site/Travfx-the-smartest-and-easiest-way-to-transfer-money-from-India-967c883f25094cd4ae2fd1fbb7c1c67b",
+          },
+          {
+            label: "How to Identify Scammers/Scam text",
+            url: "https://vinshikajain.notion.site/How-to-Identify-Scammers-Scam-text-5618908402ea44dfb66208a0a08a8d90",
+          },
+          {
+            label: "How can students abroad manage their finances?",
+            url: "https://vinshikajain.notion.site/How-can-students-abroad-manage-their-finances-c1f51ba2e9d64fc3a2aaf4d5c3087993",
+          },
+        ],
+      },
+      {
+        image:
+          "https://www.bakels.com.au/wp-content/uploads/sites/21/2020/07/Logo-Crown-PMS-281-Blue.jpg ",
+        text: "Baking",
+        body: "",
+        links: [
+          {
+            label: "How bakers can save money without sacrificing quality",
+            url: "https://vinshikajain.notion.site/How-bakers-can-save-money-without-sacrificing-quality-59d7660292234c289b976988d2b3a184",
+          },
+          {
+            label: "The Healthier Swift in the Baking Industry ",
+            url: "https://vinshikajain.notion.site/The-Healthier-Swift-in-the-Baking-Industry-9b5d42050ecb4ae8a4e92f1679eceb31",
+          },
+        ],
+      },
+      {
+        image:
+          "https://www.amenityhome.com/wp-content/uploads/2023/11/AmenityHome-Mob-Icon.png.webp",
+        text: "Interior",
+        body: "",
+        links: [
+          {
+            label:
+              "18 Mid-Century Modern Round Dining Tables to Elevate Your Interior",
+            url: "https://vinshikajain.notion.site/18-Mid-Century-Modern-Round-Dining-Tables-to-Elevate-Your-Interior-b28e0e593c464f8f913c786f66b0f4b5",
+          },
+          {
+            label:
+              "The Ultimate Guide to Finding the Best Slipcovered Sofas of 2023",
+            url: "https://vinshikajain.notion.site/The-Ultimate-Guide-to-Finding-the-Best-Slipcovered-Sofas-of-2023-5a894683fc094bae9f291bc199620df8",
+          },
+          {
+            label: "9 Decor Ideas To Make Your Guest Bedroom Multifunctional",
+            url: "https://vinshikajain.notion.site/9-Decor-Ideas-To-Make-Your-Guest-Bedroom-Multifunctional-08377831df6445ffbba16eb22033759c",
+          },
+          {
+            label: "Painting Wood Floor",
+            url: "https://vinshikajain.notion.site/Painting-Wood-Floor-0a0aaebd884540d0be06050d89aa9ae1",
+          },
+          {
+            label: "The Best Sanders to Remove Paint",
+            url: "https://vinshikajain.notion.site/The-Best-Sanders-to-Remove-Paint-A-Comprehensive-Guide-to-Finding-the-Perfect-Paint-Sander-6047e92980c94896997e2e1185634950",
+          },
+          {
+            label: "The Ultimate Guide to Williams Drift of Mist SW 9166",
+            url: "https://vinshikajain.notion.site/The-Ultimate-Guide-to-Williams-Drift-of-Mist-SW-9166-fdfd3f74faaf45c38ec9336e861e485e",
+          },
+          {
+            label: "Does Home Depot Cut Wood for You - A Complete Guide",
+            url: "https://vinshikajain.notion.site/Does-Home-Depot-Cut-Wood-for-You-A-Complete-Guide-3680fb3af31b4a298ef08925e2817204",
+          },
+          {
+            label: "Stylish Roman Shades for a Perfectly Cozy Kitchen",
+            url: "https://vinshikajain.notion.site/Stylish-Roman-Shades-for-a-Perfectly-Cozy-Kitchen-be2c3b777b7c45dfbe963c6cd9a31257",
+          },
+          {
+            label: "16 Unique Ways for Mobile Home Remodels",
+            url: "https://vinshikajain.notion.site/16-Unique-Ways-for-Mobile-Home-Remodels-d614f1222ea14225bb8c2a2e2a15108c",
+          },
+          {
+            label:
+              "13 Popular Front Door Colors to Complement Your Yellow House",
+            url: "https://vinshikajain.notion.site/13-Popular-Front-Door-Colors-to-Complement-Your-Yellow-House-b1dcad206f9341bb80a7be09160d2d88",
+          },
+          {
+            label: "A Comprehensive Guide for The Best Blue Wood Stain Colors",
+            url: "https://vinshikajain.notion.site/A-Comprehensive-Guide-for-The-Best-Blue-Wood-Stain-Colors-739717ac588b403493cd134dc7554a12",
           },
         ],
       },
       {
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTeHqjg40dh9JXratQ2_4hvobtl_uYm_9bQQ&s",
-        text: "Scriptwriting Samples – TTT Assignment",
-        body: "Short, conversational Hinglish scripts focused on modern storytelling.",
+        text: "Sample scripts ",
+        body: "The scripts below are written in Hinglish as an assignment for the course I did at Terrible Tiny Tales aka ttt .",
         links: [
           {
             label: "Flaws",
@@ -203,39 +575,143 @@ const projects = [
           },
         ],
       },
+      {
+        image: cm5,
+        text: "Soul Magik",
+        body: "Soul Magikk is a spiritual & wellness brand offering products like numerology soaps, crystal bracelets, spiritual oils, and curated hampers. For Soul Magik, I wrote website copy, Amazon listings, and product descriptions. I ensured each line reflects the brand’s mystical, spiritual tone while clearly communicating product features, benefits, and emotional appeal.",
+        links: [
+          {
+            label: "Explore Soul Magik",
+            url: "https://soulmagik.in/?srsltid=AfmBOooqDX2-y_3Pfn1aPe4f-zV9-VBIx9rT0TDKPOvQmdGMeGB9Idmw",
+          },
+        ],
+      },
     ],
   },
   {
     id: 3,
-    title: "Performance Marketing",
-    image:
-      "https://www.taboola.com/wp-content/uploads-neo/2025/01/performance_marketing-scaled.jpg",
-    carouselContent: [],
-  },
-  {
-    id: 4,
     title: "Email Marketing",
     image:
       "https://blog.blendee.com/wp-content/uploads/2024/11/email-marketing.jpg",
     carouselContent: [
       {
-        image: rumlogo,
-        text: "Burning Barn Rum",
-        body: "",
-        links: [],
+        image: em1,
+        text: "America and Beyond",
+        body: "America & Beyond is a US-based fashion / lifestyle brand with global appeal. As Project Manager & Copywriter, I over look email marketing strategy, write emailers, automated flow copy, and signup forms. I am working on their retail and wholesale emailer. Where I also manage their Klaviyo campaigns. Using Klaviyo analytics, I tracked performance metrics and optimized campaigns. I also created weekly strategic decks to assess what’s working vs what’s not. Emailers and Flows I have worked on:",
+        links: [
+          {
+            label: "A&B Wholesale Newsletter Emailers ",
+            url: "https://vinshikajain.notion.site/A-B-Wholesale-Newsletter-Emailers-27424bea4a45806fa11dc3fd99a4ea3a",
+          },
+          {
+            label: "A&B Wholesale Product Based Emailer",
+            url: "https://vinshikajain.notion.site/A-B-Wholesale-Product-Based-Emailer-27424bea4a45802090c6cccf13738372",
+          },
+          {
+            label: "A&B Retail Campaigns",
+            url: "https://vinshikajain.notion.site/A-B-Retail-Campaigns-27424bea4a4580a1a41ff77a3726fa64",
+          },
+          {
+            label: "A&B Retail Birthday Flow",
+            url: "https://vinshikajain.notion.site/A-B-Retail-Birthday-Flow-27424bea4a45804cbcadc6496eff5730",
+          },
+          {
+            label: "A&B SMS Copy",
+            url: "https://vinshikajain.notion.site/A-B-SMS-Copy-27424bea4a458033800ff95bce5eed58",
+          },
+        ],
       },
       {
         image: seeplogo,
         text: "Seep",
-        body: "",
-        links: [],
+        body: "Seep is a UK-based eco-friendly home cleaning brand that creates sustainable, plastic-free cleaning products designed to reduce waste and protect the planet. As an Email Copywriter, I crafted engaging email campaigns and automated flows that highlighted Seep’s products while reinforcing their sustainability mission.",
+        links: [
+          {
+            label: "Seep Emailers",
+            url: "https://vinshikajain.notion.site/Seep-Emailer-s-27424bea4a4580dd94adda7ab7caa3ab",
+          },
+          {
+            label: "Seep Sunset Flow",
+            url: "https://vinshikajain.notion.site/Seep-Sunset-Flow-27424bea4a458010b120d8a8e23036c0",
+          },
+        ],
       },
       {
         image:
           "https://cottontwist.co.uk/cdn/shop/files/Navy_-_Horizontal_strapline.png?v=1740757188&width=600",
         text: "Cotton Twist",
-        body: "",
-        links: [],
+        body: "Cotton Twist is a UK-based brand creating eco-friendly craft kits for kids, designed to spark creativity while staying planet-friendly. I joined as the copywriter, where I established the brand’s tone of voice, engagement strategy, and copywriting guidelines. Beyond setting the foundation, I wrote email flows, campaigns, and storytelling copy that positioned Cotton Twist as a playful yet eco-conscious brand, helping it connect with parents, grandparents & gift-giver.",
+        links: [
+          {
+            label: "Cotton Twist Emailers",
+            url: "https://vinshikajain.notion.site/Cotton-Twist-Emailers-27424bea4a458052ad69fa6bc8232f39",
+          },
+          {
+            label: "Sign Up Form (Klaviyo)",
+            url: "https://vinshikajain.notion.site/Sign-Up-Form-Klaviyo-27424bea4a45806187cad148c3e6ad23",
+          },
+          {
+            label: "Text Based Flow",
+            url: "https://vinshikajain.notion.site/Text-Based-Flow-27424bea4a4580089c91c8158cef94a2",
+          },
+        ],
+      },
+      {
+        image: em3,
+        text: "Diaza",
+        body: "Diaza is a sportswear & customizable uniform brand, offering high-performance gear for teams and athletes. As an Email Copywriter for Diaza, I wrote email campaigns that reflect the brand’s athletic, dynamic voice. I maintain tone consistency across all messages.",
+        links: [
+          {
+            label: "Diaza Emailers",
+            url: "https://vinshikajain.notion.site/Diaza-Emailers-27424bea4a458011816bf5cadd04a3df",
+          },
+        ],
+      },
+      {
+        image: em4,
+        text: "The Clever Nest",
+        body: "The Clever Nest is an AI-focused company and content platform sharing the latest news, tools, and insights from the world of artificial intelligence. Their newsletters and updates cover everything from major AI events. As a **Newsletter Writer & Content Marketer**, I researched and curated AI updates, wrote and scheduled newsletters using **Beehiiv**, and repurposed content into LinkedIn posts to extend reach and engagement. My role combined content creation with execution ensuring consistent, timely communication across email and social channels.",
+        links: [
+          {
+            label: "Link 1",
+            url: "https://www.theclevernest.com/p/ai-agent-revolution-ac9d",
+          },
+          {
+            label: "Link 2",
+            url: "https://www.theclevernest.com/p/ai-tools-inside-4cad",
+          },
+          {
+            label: "Link 3",
+            url: "https://www.theclevernest.com/p/highlights-from-google-i-o-c256",
+          },
+          {
+            label: "Post 1",
+            url: "https://www.linkedin.com/feed/update/urn:li:activity:7344711191694356480/",
+          },
+          {
+            label: "Post 2",
+            url: "https://www.linkedin.com/feed/update/urn:li:activity:7344293561565077505/",
+          },
+          {
+            label: "Post 3",
+            url: "https://www.linkedin.com/feed/update/urn:li:activity:7343269241615187969/",
+          },
+        ],
+      },
+      {
+        image: em5,
+        text: "ZeroSwap",
+        body: "ZeroSwap is a Web 3.0 platform that enables gasless, multi-chain trading and DeFi solutions. I supported ZeroSwap as an Email Copywriter, creating weekly newsletters that simplified complex Web3 updates into engaging, easy-to-read content. My focus was on making highly technical information accessible, keeping the tone community-driven while highlighting new features, partnerships, and product updates. Proof of work:",
+        links: [
+          {
+            label: "ZeroSwap-Weekly Crypto-NFT",
+            url: "https://vinshikajain.notion.site/ZeroSwap-Weekly-Crypto-NFT-c8c2b0bc237941ee942d7d54c146b0ef",
+          },
+          {
+            label: "ZeroSwap-Weekly Crypto-NFT",
+            url: "https://vinshikajain.notion.site/ZeroSwap-Weekly-Crypto-NFT-74549b783f9c4e23b7c6a0d6d3a49b54",
+          },
+        ],
       },
     ],
   },
@@ -304,7 +780,7 @@ export default function PortfolioGrid() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {projects.map((p, index) => (
             <motion.div
               key={p.id}
