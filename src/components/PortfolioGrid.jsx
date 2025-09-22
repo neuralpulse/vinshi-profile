@@ -324,30 +324,6 @@ const projects = [
             label: "Avalanche vs Polygon vs Binance Smart Chain",
             url: "https://vinshikajain.notion.site/Avalanche-vs-Polygon-vs-Binance-Smart-Chain-ccb746cca5774174bca5f7378e3d5eb3",
           },
-          {
-            label: "What is Eth 2.0 and why is it important?",
-            url: "https://vinshikajain.notion.site/What-is-Eth-2-0-and-why-is-it-important-ee3c4bdac61248a9a70731d094cb7068",
-          },
-          {
-            label: "Importance of DEX Aggregators in the DeFi Ecosystem**",
-            url: "https://vinshikajain.notion.site/Importance-of-DEX-Aggregators-in-the-DeFi-Ecosystem-81a9c19908f74e19a58882c4dc2b1a43",
-          },
-          {
-            label: "Layer 1 vs. Layer 2",
-            url: "https://vinshikajain.notion.site/Layer-1-vs-Layer-2-76298990670f4f79963acb8eee435a49",
-          },
-          {
-            label: "What is Yield Farming?",
-            url: "https://vinshikajain.notion.site/What-is-Yield-Farming-9de5363f6d824cd3b492dee735d5062b",
-          },
-          {
-            label: "What are Liquidity Pools?",
-            url: "https://vinshikajain.notion.site/What-are-Liquidity-Pools-167608a3703b4fb0bbae2e139f6c4471",
-          },
-          {
-            label: "What is Gas and why does every penny count?",
-            url: "https://vinshikajain.notion.site/What-is-Gas-and-why-does-every-penny-count-8ffcaa81cbed454c8f9905489c05b633",
-          },
         ],
       },
       {
@@ -377,32 +353,6 @@ const projects = [
           {
             label: "How To Avoid Selection Bias In Market Research",
             url: "https://vinshikajain.notion.site/How-To-Avoid-Selection-Bias-In-Market-Research-f6a42cf2600d4cc78f2e5fb0574f5e36",
-          },
-          {
-            label: "Everything about the evolving metaverse market",
-            url: "https://vinshikajain.notion.site/Everything-about-the-evolving-metaverse-market-84543f6ad70a4518b7cbedda9d4778dc",
-          },
-          {
-            label:
-              "How brands can adapt to evolving attitudes to social media influencers – real and virtual",
-            url: "https://vinshikajain.notion.site/How-brands-can-adapt-to-evolving-attitudes-to-social-media-influencers-real-and-virtual-68e187958049451ca521d192b2ffab19",
-          },
-          {
-            label:
-              "How to tap into your target audience using consumer insights",
-            url: "https://vinshikajain.notion.site/How-to-tap-into-your-target-audience-using-consumer-insights-d37d7b2bac554abd81e010d523c2c1de",
-          },
-          {
-            label: "Survey Offerwalls",
-            url: "https://vinshikajain.notion.site/Survey-Offerwalls-1cd094671b7e4a9da8544e8ca0b48dd7",
-          },
-          {
-            label: "How to use surveys for lead generation",
-            url: "https://vinshikajain.notion.site/How-to-use-surveys-for-lead-generation-cb07815af2bf495bbef1e6c7b1d916b6",
-          },
-          {
-            label: "What is Big Data?",
-            url: "https://vinshikajain.notion.site/What-is-Big-Data-fb27bf75f1224ee29e8f0358f6f750c6",
           },
         ],
       },
@@ -483,31 +433,6 @@ const projects = [
           {
             label: "The Best Sanders to Remove Paint",
             url: "https://vinshikajain.notion.site/The-Best-Sanders-to-Remove-Paint-A-Comprehensive-Guide-to-Finding-the-Perfect-Paint-Sander-6047e92980c94896997e2e1185634950",
-          },
-          {
-            label: "The Ultimate Guide to Williams Drift of Mist SW 9166",
-            url: "https://vinshikajain.notion.site/The-Ultimate-Guide-to-Williams-Drift-of-Mist-SW-9166-fdfd3f74faaf45c38ec9336e861e485e",
-          },
-          {
-            label: "Does Home Depot Cut Wood for You - A Complete Guide",
-            url: "https://vinshikajain.notion.site/Does-Home-Depot-Cut-Wood-for-You-A-Complete-Guide-3680fb3af31b4a298ef08925e2817204",
-          },
-          {
-            label: "Stylish Roman Shades for a Perfectly Cozy Kitchen",
-            url: "https://vinshikajain.notion.site/Stylish-Roman-Shades-for-a-Perfectly-Cozy-Kitchen-be2c3b777b7c45dfbe963c6cd9a31257",
-          },
-          {
-            label: "16 Unique Ways for Mobile Home Remodels",
-            url: "https://vinshikajain.notion.site/16-Unique-Ways-for-Mobile-Home-Remodels-d614f1222ea14225bb8c2a2e2a15108c",
-          },
-          {
-            label:
-              "13 Popular Front Door Colors to Complement Your Yellow House",
-            url: "https://vinshikajain.notion.site/13-Popular-Front-Door-Colors-to-Complement-Your-Yellow-House-b1dcad206f9341bb80a7be09160d2d88",
-          },
-          {
-            label: "A Comprehensive Guide for The Best Blue Wood Stain Colors",
-            url: "https://vinshikajain.notion.site/A-Comprehensive-Guide-for-The-Best-Blue-Wood-Stain-Colors-739717ac588b403493cd134dc7554a12",
           },
         ],
       },
